@@ -85,19 +85,18 @@ const Header = () => {
               Contact & About
             </Link>
           </li>
-          <li style={navListItemStyle}>
+          {/* <li style={navListItemStyle}>
             <Link
               to="/articles"
               style={navLinkStyle}
               onMouseEnter={(e) => (e.target.style.color = 'aqua')}
               onMouseLeave={(e) => (e.target.style.color = 'white')}
-            >
-              Published Articles
-            </Link>
-          </li>
+            >Published Articles
+            </Link> */}
+          {/* </li> */}
         </ul>
       </nav>
-    </header>
+  </header>
   );
 };
 

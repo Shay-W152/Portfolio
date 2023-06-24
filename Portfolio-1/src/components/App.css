@@ -1,5 +1,7 @@
 body {
   background-color: rgb(124, 124, 124);
+  font-family: Major Mono Display;
+  color: aqua;
   background-image: url();
   /* background-size: cover;
   background-repeat: no-repeat;

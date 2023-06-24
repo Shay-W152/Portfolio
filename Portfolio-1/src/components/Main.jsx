@@ -23,14 +23,14 @@ const Main = () => {
         <nav style={navStyle}>
           <ul style={navListStyle}>
             <li style={navListItemStyle}>
-              <Link
+              {/* <Link
                 to="/"
                 style={navLinkStyle}
                 onMouseEnter={(e) => (e.target.style.color = 'aqua')}
                 onMouseLeave={(e) => (e.target.style.color = 'white')}
               >
                 Home
-              </Link>
+              </Link> */}
             </li>
             <li style={navListItemStyle}>
               <Link
@@ -62,7 +62,7 @@ const Main = () => {
                 Contact & About
               </Link>
             </li>
-            <li style={navListItemStyle}>
+            {/* <li style={navListItemStyle}>
               <Link
                 to="/articles"
                 style={navLinkStyle}
@@ -71,7 +71,7 @@ const Main = () => {
               >
                 Published Articles
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
@@ -88,9 +88,15 @@ const Main = () => {
         Let's connect and bring your ideas to life!
       </p>
       <p style={paragraphStyle}>
-        Check out my latest projects below or visit my Projects tab above to explore them all! For more details, feel free to reach out to
-        me via email or connect with me on LinkedIn. I look forward to hearing from you!
-      </p>
+  Visit my Projects tab above to explore them all! For more details, feel free to reach out to me via 
+  <a 
+  href="mailto:fwasil83@gmail.com" 
+  style={emailLinkStyle}
+  onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+  onMouseLeave={(e) => (e.target.style.color = 'white')}
+>Email</a>, or connect with me on LinkedIn. I look forward to hearing from you!
+</p>
+
       <div className="project-links">
         {/* <a href="https://example.com/project3" style={projectLinkStyle3} target="_blank">
           TatdoodAPI
@@ -105,6 +111,11 @@ const Main = () => {
     </main>
   );
 };
+const emailLinkStyle = {
+  color:'white',
+  textDecoration: 'underline',
+  textDecorationColor: 'white',
+};
 
 const mainStyle = {
   textAlign: 'center',
@@ -112,7 +123,10 @@ const mainStyle = {
   fontFamily: 'Major Mono Display',
   marginTop: '100px',
 };
-
+const hoverEmailLinkStyle = {
+  ...emailLinkStyle,
+  color: 'aqua',
+};
 const headingStyle = {
   // fontSize: '24px',
   fontFamily: 'Major Mono Display',
