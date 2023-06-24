@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Transitions from './Transition'
 
 const Main = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -14,11 +15,82 @@ const Main = () => {
     };
   }, []);
 
+  const emailLinkStyle = {
+    color: 'white',
+    textDecoration: 'underline',
+    textDecorationColor: 'white',
+  };
+
+  const mainStyle = {
+    textAlign: 'center',
+    color: 'aqua',
+    fontFamily: 'Major Mono Display',
+    marginTop: '100px',
+  };
+
+  const headingStyle = {
+    fontFamily: 'Major Mono Display',
+    marginBottom: '10px',
+  };
+
+  const paragraphStyle = {
+    marginBottom: '20px',
+  };
+
+  const projectLinkStyle = {
+    display: 'inline-block',
+    padding: '90px',
+    margin: '10px',
+    backgroundColor: 'white',
+    textDecoration: 'none',
+    borderRadius: '5px',
+    color: 'black',
+    borderColor: 'aqua',
+  };
+
+  const projectLinkStyle2 = {
+    ...projectLinkStyle,
+    backgroundImage: 'url(https://i.imgur.com/zMWWb5Km.png)',
+    color: 'white',
+  };
+
+  const projectLinkStyle3 = {
+    ...projectLinkStyle,
+    backgroundImage: 'url(https://i.imgur.com/hot03JIm.png)',
+    color: 'white',
+  };
+
+  const navStyle = {
+    marginBottom: '20px',
+    textDecoration: 'underline',
+    textDecorationColor: 'white',
+    color: 'white',
+  };
+
+  const navListStyle = {
+    listStyleType: 'none',
+    padding: 0,
+    display: 'flex',
+    justifyContent: 'center',
+  };
+
+  const navListItemStyle = {
+    marginRight: '10px',
+  };
+
+  const navLinkStyle = {
+    textDecoration: 'none',
+    color: 'white',
+    transition: 'color 0.3s ease',
+  };
+
   return (
+    
     <main style={mainStyle}>
       <h1 style={headingStyle}>Hi, I'm Shay</h1>
       <h2>{currentDateTime.toLocaleString()}</h2>
       <p style={paragraphStyle}>I Develop Accessible and Attractive Full Stack Web Applications</p>
+      <Transitions>
       <header style={navStyle}>
         <nav style={navStyle}>
           <ul style={navListStyle}>
@@ -74,7 +146,9 @@ const Main = () => {
             </li> */}
           </ul>
         </nav>
+        
       </header>
+      
       <h1 style={headingStyle}>OVERVIEW</h1>
       <p style={paragraphStyle}>
         Welcome to my portfolio! I'm a skilled Full Stack software developer with expertise in React, Node.js,
@@ -88,15 +162,18 @@ const Main = () => {
         Let's connect and bring your ideas to life!
       </p>
       <p style={paragraphStyle}>
-  Visit my Projects tab above to explore them all! For more details, feel free to reach out to me via 
-  <a 
-  href="mailto:fwasil83@gmail.com" 
-  style={emailLinkStyle}
-  onMouseEnter={(e) => (e.target.style.color = 'aqua')}
-  onMouseLeave={(e) => (e.target.style.color = 'white')}
->Email</a>, or connect with me on LinkedIn. I look forward to hearing from you!
-</p>
-
+        Visit my Projects tab above to explore them all! For more details, feel free to reach out to me via{' '}
+        <a
+          href="mailto:fwasil83@gmail.com"
+          style={emailLinkStyle}
+          onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+          onMouseLeave={(e) => (e.target.style.color = 'white')}
+        >
+          Email
+        </a>
+        , or connect with me on LinkedIn. I look forward to hearing from you!
+      </p>
+      </Transitions>
       <div className="project-links">
         {/* <a href="https://example.com/project3" style={projectLinkStyle3} target="_blank">
           TatdoodAPI
@@ -110,78 +187,6 @@ const Main = () => {
       </div>
     </main>
   );
-};
-const emailLinkStyle = {
-  color:'white',
-  textDecoration: 'underline',
-  textDecorationColor: 'white',
-};
-
-const mainStyle = {
-  textAlign: 'center',
-  color: 'aqua',
-  fontFamily: 'Major Mono Display',
-  marginTop: '100px',
-};
-const hoverEmailLinkStyle = {
-  ...emailLinkStyle,
-  color: 'aqua',
-};
-const headingStyle = {
-  // fontSize: '24px',
-  fontFamily: 'Major Mono Display',
-  marginBottom: '10px',
-};
-
-const paragraphStyle = {
-  marginBottom: '20px',
-};
-
-const projectLinkStyle = {
-  display: 'inline-block',
-  padding: '90px',
-  margin: '10px',
-  backgroundColor: 'white',
-  textDecoration: 'none',
-  borderRadius: '5px',
-  color: 'black',
-  borderColor: 'aqua',
-};
-
-const projectLinkStyle2 = {
-  ...projectLinkStyle,
-  backgroundImage: 'url(https://i.imgur.com/zMWWb5Km.png)',
-  color: 'white',
-};
-
-const projectLinkStyle3 = {
-  ...projectLinkStyle,
-  backgroundImage: 'url(https://i.imgur.com/hot03JIm.png)',
-  color: 'white',
-};
-
-const navStyle = {
-  marginBottom: '20px',
-  textDecoration: 'underline',
-  textDecorationColor: 'white',
-  color: 'white',
-};
-
-const navListStyle = {
-  listStyleType: 'none',
-  padding: 0,
-  display: 'flex',
-  justifyContent: 'center',
-};
-
-const navListItemStyle = {
-  marginRight: '10px',
-};
-
-const navLinkStyle = {
-  textDecoration: 'none',
-  color: 'white',
-  transition: 'color 0.3s ease',
 };
 
 export default Main;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Transitions from './Transition'
 
 const About = () => {
   const emailLinkStyle = {
@@ -16,6 +17,7 @@ const About = () => {
 
   return (
     <div style={styles.container}>
+       <Transitions>
       <h1>Lets Connect and Collaborate</h1>
       <div style={styles.contact}>
         {/* <h3>Contact Information</h3> */}
@@ -50,15 +52,18 @@ const About = () => {
           proficiency in JavaScript, React, Python, and HTML/CSS, I am confident in my ability to make valuable contributions
           to your organization's success.
         </p>
+        
       </div>
+      </Transitions>
     </div>
+    
   );
 };
 
 const styles = {
   container: {
     fontFamily: 'Major Mono Display',
-    maxWidth: '600px',
+    maxWidth: '1600px',
     margin: '0 auto',
     padding: '20px',
     color: 'aqua',

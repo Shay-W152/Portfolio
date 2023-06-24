@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Transitions from './Transition'
 
 const Projects = () => {
   const projects = [
@@ -34,6 +35,7 @@ const Projects = () => {
   const projectLinkStyle = {
     display: 'inline-block',
     fontFamily:'Georgia',
+    height:'100px',
     padding: '90px',
     margin: '10px',
     backgroundColor: 'white',
@@ -66,7 +68,8 @@ const Projects = () => {
 
   return (
     <div>
-      <h1>Projects:</h1>
+      <Transitions>
+      <h1>Check These Out!:</h1>
       <div style={carouselStyle}>
         {projects.map((project, index) => (
           <a
@@ -90,9 +93,13 @@ const Projects = () => {
               </div>
             )}
           </a>
+          
         ))}
+        
       </div>
+      </Transitions>
     </div>
+    
   );
 };
 
