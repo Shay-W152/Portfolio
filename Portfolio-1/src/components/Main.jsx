@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -13,70 +14,67 @@ const Main = () => {
     };
   }, []);
 
-  const mainStyle = {
-    textAlign: 'left',
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    color: 'aqua',
-    fontFamily: 'Major Mono Display',
-  };
-
-  const headingStyle = {
-    fontSize: '24px',
-    marginTop: '0',
-    fontFamily: 'Major Mono Display',
-    marginRight: '600px',
-  };
-
-  const paragraphStyle = {};
-
-  const projectLinkStyle = {
-    display: 'inline-block',
-    padding: '10px 20px',
-    margin: '10px',
-    backgroundColor: 'transparent',
-    color: 'white',
-    textDecoration: 'none',
-    borderRadius: '5px',
-    color: 'aqua',
-  };
-
-  const navStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-  };
-
-  const navListStyle = {
-    listStyle: 'none',
-    display: 'flex',
-    margin: 0,
-    padding: 0,
-  };
-
-  const navListItemStyle = {
-    margin: '0 10px',
-    color: 'white',
-  };
-
-  const navLinkStyle = {
-    color: 'white',
-    textDecoration: 'none',
-    fontWeight: 'bold',
-  };
-
   return (
     <main style={mainStyle}>
-      <header style={Object.assign({}, navStyle, { marginBottom: '20px' })}>
-        <nav></nav>
-      </header>
       <h1 style={headingStyle}>Hi, I'm Shay</h1>
       <h2>{currentDateTime.toLocaleString()}</h2>
-      <p style={paragraphStyle}>I Develop Accessible and Attractive full stack and MERN stack web applications</p>
-      <div className="project-links">
-        
-      </div>
+      <p style={paragraphStyle}>I Develop Accessible and Attractive Full Stack Web Applications</p>
+      <header style={navStyle}>
+        <nav style={navStyle}>
+          <ul style={navListStyle}>
+            <li style={navListItemStyle}>
+              <Link
+                to="/"
+                style={navLinkStyle}
+                onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+                onMouseLeave={(e) => (e.target.style.color = 'white')}
+              >
+                Home
+              </Link>
+            </li>
+            <li style={navListItemStyle}>
+              <Link
+                to="/resume"
+                style={navLinkStyle}
+                onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+                onMouseLeave={(e) => (e.target.style.color = 'white')}
+              >
+                Resume
+              </Link>
+            </li>
+            <li style={navListItemStyle}>
+              <Link
+                to="/projects"
+                style={navLinkStyle}
+                onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+                onMouseLeave={(e) => (e.target.style.color = 'white')}
+              >
+                Projects
+              </Link>
+            </li>
+            <li style={navListItemStyle}>
+              <Link
+                to="/about"
+                style={navLinkStyle}
+                onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+                onMouseLeave={(e) => (e.target.style.color = 'white')}
+              >
+                Contact & About
+              </Link>
+            </li>
+            <li style={navListItemStyle}>
+              <Link
+                to="/articles"
+                style={navLinkStyle}
+                onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+                onMouseLeave={(e) => (e.target.style.color = 'white')}
+              >
+                Published Articles
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <h1 style={headingStyle}>OVERVIEW</h1>
       <p style={paragraphStyle}>
         Welcome to my portfolio! I'm a skilled Full Stack software developer with expertise in React, Node.js,
@@ -90,22 +88,86 @@ const Main = () => {
         Let's connect and bring your ideas to life!
       </p>
       <p style={paragraphStyle}>
-        Check out my latest projects below or visit my GitHub repository for more details. Feel free to reach out to
+        Check out my latest projects below or visit my Projects tab above to explore them all! For more details, feel free to reach out to
         me via email or connect with me on LinkedIn. I look forward to hearing from you!
       </p>
       <div className="project-links">
-        <a href="http://pokeapi152.surge.sh/" style={projectLinkStyle} target="_blank">
-          Project 1
+        {/* <a href="https://example.com/project3" style={projectLinkStyle3} target="_blank">
+          TatdoodAPI
         </a>
-        <a href="http://space-dude.surge.sh/" style={projectLinkStyle} target="_blank">
-          Project 2
-        </a>
-        <a href="https://example.com/project3" style={projectLinkStyle} target="_blank">
-          Project 3
-        </a>
+        <a href="http://space-dude.surge.sh/" style={projectLinkStyle2} target="_blank">
+          Space Game
+        </a> */}
+        {/* <a href="http://pokeapi152.surge.sh/" style={projectLinkStyle} target="_blank">
+          PokemonAPI
+        </a> */}
       </div>
     </main>
   );
+};
+
+const mainStyle = {
+  textAlign: 'center',
+  color: 'aqua',
+  fontFamily: 'Major Mono Display',
+  marginTop: '100px',
+};
+
+const headingStyle = {
+  // fontSize: '24px',
+  fontFamily: 'Major Mono Display',
+  marginBottom: '10px',
+};
+
+const paragraphStyle = {
+  marginBottom: '20px',
+};
+
+const projectLinkStyle = {
+  display: 'inline-block',
+  padding: '90px',
+  margin: '10px',
+  backgroundColor: 'white',
+  textDecoration: 'none',
+  borderRadius: '5px',
+  color: 'black',
+  borderColor: 'aqua',
+};
+
+const projectLinkStyle2 = {
+  ...projectLinkStyle,
+  backgroundImage: 'url(https://i.imgur.com/zMWWb5Km.png)',
+  color: 'white',
+};
+
+const projectLinkStyle3 = {
+  ...projectLinkStyle,
+  backgroundImage: 'url(https://i.imgur.com/hot03JIm.png)',
+  color: 'white',
+};
+
+const navStyle = {
+  marginBottom: '20px',
+  textDecoration: 'underline',
+  textDecorationColor: 'white',
+  color: 'white',
+};
+
+const navListStyle = {
+  listStyleType: 'none',
+  padding: 0,
+  display: 'flex',
+  justifyContent: 'center',
+};
+
+const navListItemStyle = {
+  marginRight: '10px',
+};
+
+const navLinkStyle = {
+  textDecoration: 'none',
+  color: 'white',
+  transition: 'color 0.3s ease',
 };
 
 export default Main;
