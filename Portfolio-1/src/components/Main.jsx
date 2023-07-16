@@ -109,18 +109,14 @@ const Main = () => {
                 to="/resume"
                 style={navLinkStyle}
                 onMouseEnter={(e) => (e.target.style.color = 'aqua')}
-                onMouseLeave={(e) => (e.target.style.color = 'white')}
-              >
-                Resume
-              </Link>
+                onMouseLeave={(e) => (e.target.style.color = 'white')}>Resume</Link>
             </li>
             <li style={navListItemStyle}>
               <Link
                 to="/projects"
                 style={navLinkStyle}
                 onMouseEnter={(e) => (e.target.style.color = 'aqua')}
-                onMouseLeave={(e) => (e.target.style.color = 'white')}
-              >
+                onMouseLeave={(e) => (e.target.style.color = 'white')}>
                 Projects
               </Link>
             </li>
