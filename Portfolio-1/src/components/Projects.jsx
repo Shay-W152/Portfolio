@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
-import Transitions from './Transition';
+import Transitions2 from './Transitions2';
 
 const Projects = () => {
   const projects = [
     {
-      title: ' ',
+      title: 'Space Dude',
       imageUrl: 'https://i.imgur.com/zMWWb5Km.png',
       link: 'http://space-dude.surge.sh/',
       description: 'A space-themed game built with HTML, CSS, and JavaScript.',
     },
     {
-      title: ' ',
+      title: 'Tatdood',
       imageUrl: 'https://i.imgur.com/hot03JIm.png',
       link: '',
-      description: 'Database consisting of different styles and artists by state then embedding the Google Map API.',
+      description: 'I created a database consisting of different styles and artists by state on mogno atlas then embedding it into a Google Map API.',
     },
     {
-      title: ' ',
+      title: '.nebulaNav',
       imageUrl: 'https://i.imgur.com/KjQvpOl.png',
       link: 'https://nebula-nav.netlify.app/',
-      description: 'Nebula-Nav is an interactive starmap site that allows users to explore the wonders of the universe.',
+      description: '.nebulaNav is an interactive starmap site built with three.js fiber allowing users to explore the wonders of the universe.',
     },
   ];
 
@@ -30,6 +30,7 @@ const Projects = () => {
     justifyContent: 'center',
     alignItems: 'center',
     height: '300px',
+    marginTop: '20px',
   };
 
   const projectLinkStyle = {
@@ -67,9 +68,19 @@ const Projects = () => {
   };
 
   return (
-    <div>
-      <Transitions>
-        <h1>Check These Out!</h1>
+    <div style={styles.container}>
+      <Transitions2>
+        <h1 style={styles.heading}>My Projects!</h1>
+        <p style={styles.description}>
+          I have a passion for building interactive web applications. Here are a few projects I've worked on:
+        </p>
+        <ul style={styles.list}>
+          {projects.map((project, index) => (
+            <li key={index} style={styles.listItem}>
+              {project.title}: {project.description}
+            </li>
+          ))}
+        </ul>
         <div style={carouselStyle}>
           {projects.map((project, index) => (
             <a
@@ -96,9 +107,48 @@ const Projects = () => {
             </a>
           ))}
         </div>
-      </Transitions>
+      </Transitions2>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    backgroundColor: 'transparent',
+    minHeight: '100vh',
+    maxWidth: '800px',
+    margin: '0 auto',
+    alignItems: 'center',
+    flexDirection: 'column',
+    textAlign: 'center',
+  
+  },
+  heading: {
+    fontSize: '28px',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+    color: 'aqua',
+  },
+  description: {
+    fontSize: '16px',
+    lineHeight: '1.5',
+    marginBottom: '20px',
+    color:'aqua',
+  },
+  list: {
+    listStyleType: 'none',
+    padding: 0,
+    marginTop:0,
+    marginBottom: '20px',
+  },
+  listItem: {
+    fontSize: '16px',
+    lineHeight: '1.5',
+    marginBottom: '10px',
+    color:'aqua',
+  },
 };
 
 export default Projects;
