@@ -67,6 +67,7 @@ const Main = () => {
     justifyContent: 'center',
     alignItems: 'center',
     minHeight: '100vh',
+    
   };
 
   const mainStyle = {
@@ -84,10 +85,12 @@ const Main = () => {
   const headingStyle = {
     fontFamily: 'Major Mono Display',
     marginBottom: '10px',
+    
   };
 
   const paragraphStyle = {
     textAlign: 'center',
+    marginTop:0,
   };
 
   const circleImageContainerStyle = {
@@ -105,6 +108,7 @@ const Main = () => {
     objectFit: 'cover',
     objectPosition: 'center',
     transition: 'transform 0.3s',
+    
   };
 
   const projectLinkStyle = {

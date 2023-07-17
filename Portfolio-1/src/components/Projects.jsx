@@ -30,7 +30,7 @@ const Projects = () => {
     justifyContent: 'center',
     alignItems: 'center',
     height: '300px',
-    marginTop: '20px',
+    marginTop:0,
   };
 
   const projectLinkStyle = {
@@ -39,6 +39,7 @@ const Projects = () => {
     height: '200px',
     padding: '20px',
     margin: '10px',
+    marginTop:0,
     backgroundColor: 'white',
     textDecoration: 'none',
     borderRadius: '8px',
@@ -61,6 +62,7 @@ const Projects = () => {
     opacity: hoveredProject !== null ? '1' : '0',
     transition: 'opacity 0.3s',
     color: 'aqua',
+    marginTop:0,
   };
 
   const handleProjectHover = (index) => {
@@ -123,15 +125,18 @@ const styles = {
     alignItems: 'center',
     flexDirection: 'column',
     textAlign: 'center',
+    marginTop:0,
   
   },
   heading: {
+    marginTop:0,
     fontSize: '28px',
     fontWeight: 'bold',
     marginBottom: '20px',
     color: 'aqua',
   },
   description: {
+    marginTop:0,
     fontSize: '16px',
     lineHeight: '1.5',
     marginBottom: '20px',
@@ -148,6 +153,7 @@ const styles = {
     lineHeight: '1.5',
     marginBottom: '10px',
     color:'aqua',
+    marginTop:0,
   },
 };
 

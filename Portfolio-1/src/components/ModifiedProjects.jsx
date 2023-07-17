@@ -75,6 +75,8 @@ const ModifiedProjects = () => {
     textDecoration: 'none',
     borderRadius: '8px',
     color: 'aqua',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
     gap: '20vmin',
     position: 'relative',
     overflow: 'hidden',
@@ -93,7 +95,8 @@ const ModifiedProjects = () => {
     borderRadius: '8px',
     color: 'aqua',
     textAlign: 'center',
-    width: '300px',
+    height: '250px',
+    width: '280px',
   };
 
   const handleProjectHover = (index) => {
