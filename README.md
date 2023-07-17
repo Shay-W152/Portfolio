@@ -36,7 +36,7 @@ Welcome to my portfolio! This repository showcases my projects and provides info
 
 ## Installation
 
-To run Nebula-Nav locally, follow these steps:
+To run locally, follow these steps:
 
 1. Clone the repository: `git clone <repository-url>`
 2. Navigate to the project directory: `cd Portfolio-1`
