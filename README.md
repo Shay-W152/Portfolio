@@ -34,6 +34,15 @@ Welcome to my portfolio! This repository showcases my projects and provides info
 
 - List your skills, technologies, and programming languages.
 
+## Installation
+
+To run Nebula-Nav locally, follow these steps:
+
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd Portfolio-1`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
+
 ## Contact
 
 - Email: [Your Email Address](mailto:fwasil83@gmail.com)
