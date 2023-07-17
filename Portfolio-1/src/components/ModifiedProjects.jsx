@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Transitions from './Transition';
+import Transitions2 from './Transitions2';
 
 const ModifiedProjects = () => {
   const projects = [
@@ -45,7 +46,7 @@ const ModifiedProjects = () => {
 
   const containerStyle = {
     display: 'flex',
-    justifyContent: 'flex-start', // Align to the left
+    justifyContent: 'flex-start',
     alignItems: 'center',
     minHeight: '100vh',
     backgroundColor: 'transparent',
@@ -60,7 +61,8 @@ const ModifiedProjects = () => {
     maxWidth: '800px',
     padding: '40px',
     margin: '40px',
-    alignItems: 'flex-start', // Align grid items to the left
+    alignItems: 'flex-start',
+    justifyItems: 'end',
   };
 
   const projectLinkStyle = {
@@ -85,12 +87,12 @@ const ModifiedProjects = () => {
     flexDirection: 'column',
     alignItems: 'flex-start',
     opacity: hoveredProject !== null ? '1' : '0',
-    transition: 'opacity 0.3s',
-    background: 'rgba(0, 0, 0, 0.7)',
+    transition: 'opacity 0.5s',
+    background: '#2F3137',
     padding: '10px',
     borderRadius: '8px',
     color: 'aqua',
-    textAlign: 'left',
+    textAlign: 'center',
     width: '300px',
   };
 
@@ -131,6 +133,9 @@ const ModifiedProjects = () => {
           ))}
         </div>
       </Transitions>
+      <Transitions2>
+      <h1>Check out my Projects!</h1>
+      </Transitions2>
     </div>
   );
 };
