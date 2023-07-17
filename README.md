@@ -1,67 +1,40 @@
-<a name="readme-top"></a>
-<div align="center">
+# My Portfolio
 
-  ![Project Banner](readme_assets/readme_banner.png#gh-dark-mode-only)
-  ![Project Banner](readme_assets/readme_banner-light.png#gh-light-mode-only)
+## About
 
-  <h1>Project Name</h1>
-  
-  <p>
-    Project Description
-  </p>
+Welcome to my portfolio! This repository showcases my projects and provides information about my skills and experience as a Full Stack Web Developer.
 
-<!-- Badges -->
-<p>
-  <!-- Add your badges here -->
-</p>
-   
- <h4>
-    <a href="Link to Demo">View Demo</a>
-  <span> · </span>
-    <a href="Link to Documentation">Documentation</a>
-  <span> · </span>
-    <a href="Link to Report Bug">Report Bug</a>
-  <span> · </span>
-    <a href="Link to Request Feature">Request Feature</a>
-  </h4>
-</div>
+## Table of Contents
 
-<br />
+- [Projects](#projects)
+- [Skills](#skills)
+- [Contact](#contact)
 
-<!-- Table of Contents -->
-<details>
+## Projects
 
-<summary>
+### Project 1
 
-# :notebook_with_decorative_cover: Table of Contents
+- Description: Brief description of Project 1.
+- Technologies: List the technologies used in Project 1.
+- Demo: Link to the live demo of Project 1.
 
-</summary>
+### Project 2
 
-- [About the Project](#star2-about-the-project)
-  * [Folder Structure](#bangbang-folder-structure)
-  * [Tech Stack](#space_invader-tech-stack)
-- [Getting Started](#toolbox-getting-started)
-  * [Installation](#gear-installation)
-  * [Run Locally](#running-run-locally)
-- [Contributing](#wave-contributing)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
+- Description: Brief description of Project 2.
+- Technologies: List the technologies used in Project 2.
+- Demo: Link to the live demo of Project 2.
 
-</details>  
+### Project 3
 
-<!-- About the Project -->
-## :star2: About the Project
+- Description: Brief description of Project 3.
+- Technologies: List the technologies used in Project 3.
+- Demo: Link to the live demo of Project 3.
 
-<div align="center">
-  <!-- Add project screenshots or images here -->
-</div>
+## Skills
 
-<br />
+- List your skills, technologies, and programming languages.
 
-Project Description
+## Contact
 
-<!-- Folder Structure -->
-### :bangbang: Folder Structure
-
-Here is the folder structure of the project.
+- Email: [Your Email Address](mailto:fwasil83@gmail.com)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/shay-wasil-3bb889130/)
