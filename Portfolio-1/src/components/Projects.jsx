@@ -4,7 +4,7 @@ import Transitions2 from './Transitions2';
 const Projects = () => {
   const projects = [
     {
-      title: 'Space Dude',
+      title: 'Forgotten Horrors',
       imageUrl: 'https://i.imgur.com/zMWWb5Km.png',
       link: 'http://space-dude.surge.sh/',
       description: 'A space-themed game built with HTML, CSS, and JavaScript.',
@@ -72,7 +72,7 @@ const Projects = () => {
       <Transitions2>
         <h1 style={styles.heading}>My Projects!</h1>
         <p style={styles.description}>
-          I have a passion for building interactive web applications. Here are a few projects I've worked on:
+          I have a passion for building full stack applications that spark inspiration. Here are a few projects I've worked on:
         </p>
         <ul style={styles.list}>
           {projects.map((project, index) => (

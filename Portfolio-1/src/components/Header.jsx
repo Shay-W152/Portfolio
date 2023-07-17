@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const headerStyle = {
     width: '100%',
-    backgroundColor: '',
+     
     color: 'aqua',
     position: 'absolute',
     top: '0',
     left: '0',
     fontFamily: 'Major Mono Display',
+    backgroundColor: '#181818',
   };
 
   const navStyle = {
@@ -19,6 +20,7 @@ const Header = () => {
   };
 
   const navListStyle = {
+    backgroundColor: '#181818',
     listStyle: 'none',
     display: 'flex',
     margin: 0,
@@ -28,6 +30,7 @@ const Header = () => {
   const navListItemStyle = {
     margin: '0 10px',
     color: 'aqua',
+    
   };
 
   const navLinkStyle = {
@@ -67,7 +70,7 @@ const Header = () => {
           </li>
           <li style={navListItemStyle}>
             <Link
-              to="/projects"
+              to="/modifiedprojects"
               style={navLinkStyle}
               onMouseEnter={(e) => (e.target.style.color = 'aqua')}
               onMouseLeave={(e) => (e.target.style.color = 'white')}

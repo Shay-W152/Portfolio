@@ -1,12 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Transitions from './Transition';
+import ModifiedProjects from './ModifiedProjects';
 import Projects from './Projects';
+import About from './About';
 
 const Main = () => {
   const [currentDateTime, setCurrentDateTime] = useState(new Date());
   const [showProjects, setShowProjects] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
   const projectsRef = useRef(null);
+  const aboutRef = useRef(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -31,6 +35,23 @@ const Main = () => {
     return () => {
       if (projectsRef.current) {
         observer.unobserve(projectsRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+      setShowAbout(entry.isIntersecting);
+    });
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
+
+    return () => {
+      if (aboutRef.current) {
+        observer.unobserve(aboutRef.current);
       }
     };
   }, []);
@@ -89,7 +110,6 @@ const Main = () => {
   const projectLinkStyle = {
     display: 'inline-block',
     padding: '90px',
-    margin: '10px',
     backgroundColor: 'white',
     textDecoration: 'none',
     borderRadius: '5px',
@@ -164,7 +184,7 @@ const Main = () => {
                 </li>
                 <li style={navListItemStyle}>
                   <Link
-                    to="/projects"
+                    to="/modifiedprojects"
                     style={navLinkStyle}
                     onMouseEnter={(e) => (e.target.style.color = 'aqua')}
                     onMouseLeave={(e) => (e.target.style.color = 'white')}
@@ -227,6 +247,11 @@ const Main = () => {
         <div className="project-links" ref={projectsRef}>
           {showProjects && <Projects />}
         </div>
+         
+        <div className="about-section" ref={aboutRef}>
+          {showAbout && <About />}
+        </div>
+        
       </main>
     </div>
   );

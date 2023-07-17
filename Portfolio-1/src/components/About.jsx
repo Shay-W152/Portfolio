@@ -63,7 +63,7 @@ const styles = {
   container: {
     display: 'flex',
     justifyContent: 'center',
-    backgroundColor: '#181818',
+  
     minHeight: '100vh',
     maxWidth: '800px',
     margin: '0 auto',
@@ -75,6 +75,8 @@ const styles = {
     background: '#2F3137',
     padding: '20px',
     borderRadius: '15px',
+    marginTop: '50px',  
+    marginBottom: '30px',  
   },
   contact: {
     marginBottom: '30px',
@@ -83,5 +85,6 @@ const styles = {
     marginBottom: '30px',
   },
 };
+
 
 export default About;
