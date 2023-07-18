@@ -22,24 +22,24 @@ const ModifiedProjects = () => {
       link: 'https://nebula-nav.netlify.app/',
       description: '.nebulaNav is an interactive starmap site built with three.js fiber allowing users to explore the wonders of the universe.',
     },
-    {
-      title: 'Forgotten Horrors',
-      imageUrl: 'https://wallpapers.com/images/hd/cool-white-man-art-l9kfu90ij5saegi6.jpg',
-      link: 'http://space-dude.surge.sh/',
-      description: 'A space-themed game built with HTML, CSS, and JavaScript.',
-    },
-    {
-      title: 'Tatdood',
-      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVy_a-7_ihJxAqgEX-TX2kSrNdRu5z_dfhig&usqp=CAU',
-      link: '',
-      description: 'I created a database consisting of different styles and artists by state on mogno atlas then embedding it into a Google Map API.',
-    },
-    {
-      title: '.nebulaNav',
-      imageUrl: 'https://wallpapercave.com/wp/wp6819375.jpg',
-      link: 'https://nebula-nav.netlify.app/',
-      description: '.nebulaNav is an interactive starmap site built with three.js fiber allowing users to explore the wonders of the universe.',
-    },
+    // {
+    //   title: 'Forgotten Horrors',
+    //   imageUrl: 'https://wallpapers.com/images/hd/cool-white-man-art-l9kfu90ij5saegi6.jpg',
+    //   link: 'http://space-dude.surge.sh/',
+    //   description: 'A space-themed game built with HTML, CSS, and JavaScript.',
+    // },
+    // {
+    //   title: 'Tatdood',
+    //   imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVy_a-7_ihJxAqgEX-TX2kSrNdRu5z_dfhig&usqp=CAU',
+    //   link: '',
+    //   description: 'I created a database consisting of different styles and artists by state on mogno atlas then embedding it into a Google Map API.',
+    // },
+    // {
+    //   title: '.nebulaNav',
+    //   imageUrl: 'https://wallpapercave.com/wp/wp6819375.jpg',
+    //   link: 'https://nebula-nav.netlify.app/',
+    //   description: '.nebulaNav is an interactive starmap site built with three.js fiber allowing users to explore the wonders of the universe.',
+    // },
   ];
 
   const [hoveredProject, setHoveredProject] = useState(null);

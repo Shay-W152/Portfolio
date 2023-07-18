@@ -75,7 +75,7 @@ const Main = () => {
     color: 'aqua',
     fontFamily: 'Major Mono Display',
     marginTop: '50px',
-    marginBottom: '30px',
+    
     maxWidth: '800px',
     padding: '30px',
     background: '#2F3137',
@@ -84,7 +84,7 @@ const Main = () => {
 
   const headingStyle = {
     fontFamily: 'Major Mono Display',
-    marginBottom: '10px',
+    
     
   };
 
