@@ -32,7 +32,7 @@ Welcome to my portfolio! This repository showcases my projects and provides info
 
 ## Skills
 
-- List your skills, technologies, and programming languages.
+- List of skills, technologies, and programming languages.
 
 ## Installation
 
@@ -45,5 +45,5 @@ To run locally, follow these steps:
 
 ## Contact
 
-- Email: [Your Email Address](mailto:fwasil83@gmail.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/shay-wasil-3bb889130/)
+- Email: [  Email Address](mailto:fwasil83@gmail.com)
+- LinkedIn: [  LinkedIn Profile](https://www.linkedin.com/in/shay-wasil-3bb889130/)
