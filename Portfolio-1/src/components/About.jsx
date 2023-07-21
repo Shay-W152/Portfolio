@@ -16,9 +16,8 @@ const About = () => {
 
   return (
     <div style={styles.container}>
-      
-        <div style={styles.contentWrapper}>
-          <Transitions>
+      <div style={styles.contentWrapper}>
+        <Transitions>
           <h1>Lets Connect and Collaborate</h1>
           <div style={styles.contact}>
             <p>Sheikh-Saad Wasil</p>
@@ -34,6 +33,18 @@ const About = () => {
                 fwasil83@gmail.com
               </a>
               .
+            </p>
+            {/* LinkedIn and GitHub links */}
+            <p>
+              Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/shay-wasil-3bb889130/" target="_blank" style={emailLinkStyle}
+              onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+              onMouseLeave={(e) => (e.target.style.color = 'white')}>LinkedIn</a>
+            </p>
+            <p>
+              Check out my GitHub: <a href="https://github.com/Shay-W152" target="_blank" style={emailLinkStyle}
+              onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+              onMouseLeave={(e) => (e.target.style.color = 'white')}
+              >GitHub</a>
             </p>
           </div>
 
