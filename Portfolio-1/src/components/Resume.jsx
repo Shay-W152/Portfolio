@@ -110,7 +110,7 @@ const Resume = () => {
           <h3 style={styles.sectionHeading}>Statement</h3>
           <p style={styles.paragraph}>
 
-            As a highly skilled software engineer specializing in front-end development, I possess a unique blend of technical expertise, creativity, and attention to detail that sets me apart. With a solid background in problem-solving, I thrive on overcoming challenges and finding innovative solutions. Drawing from my experience as a researcher, I have honed my leadership skills, seamlessly transferring my ability to analyze complex problems and communicate effectively to drive team success. I am eager to collaborate with your departments, streamlining workflows and enhancing efficiency, while maintaining a keen focus on aesthetics and quality. My greatest strength lies in fostering a cohesive team environment, leveraging the strengths of each individual to achieve departmental goals and uphold exceptional standards. By harnessing my diverse skill set, I am confident in my ability to make a valuable contribution to your organization.
+          I am a highly skilled software engineer with a strong academic research background and a knack for creative problem-solving. My expertise lies in developing innovative full-stack solutions. Through my leadership experience, I've honed the ability to drive team success by fostering a cohesive and efficient work environment. I am enthusiastic about collaborating with your organization to contribute to its goals while upholding the highest standards of quality and efficiency.
           </p>
 
           <h3 style={styles.sectionHeading}>Experience</h3>

@@ -91,6 +91,7 @@ const Main = () => {
   const paragraphStyle = {
     textAlign: 'center',
     marginTop:0,
+   
   };
 
   const circleImageContainerStyle = {
