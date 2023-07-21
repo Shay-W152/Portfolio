@@ -4,10 +4,10 @@ import Transitions2 from './Transitions2';
 const Projects = () => {
   const projects = [
     {
-      title: 'Forgotten Horrors',
-      imageUrl: 'https://i.imgur.com/zMWWb5Km.png',
-      link: 'http://space-dude.surge.sh/',
-      description: 'A space-themed game built with HTML, CSS, and JavaScript.',
+      title: 'Tickit',
+      imageUrl: 'https://i.imgur.com/VN6oMfA.png',
+      link: 'http://tick-it.s3-website-us-west-1.amazonaws.com/',
+      description: 'A ticket booking and e-commerce site built up with React bootstrap and DjangoRest.',
     },
     {
       title: 'Tatdood',
@@ -21,6 +21,7 @@ const Projects = () => {
       link: 'https://nebula-nav.netlify.app/',
       description: '.nebulaNav is an interactive starmap site built with three.js fiber allowing users to explore the wonders of the universe.',
     },
+    
   ];
 
   const [hoveredProject, setHoveredProject] = useState(null);

@@ -20,6 +20,7 @@ const Resume = () => {
       padding: '30px',
       background: '#2F3137',
       borderRadius: '15px',
+      
     },
     heading: {
       fontSize: '28px',
@@ -106,6 +107,17 @@ const Resume = () => {
           >
             Email: fwasil83@gmail.com
           </a>
+          <p>
+              Connect with me on LinkedIn: <a href="https://www.linkedin.com/in/shay-wasil-3bb889130/" target="_blank"  
+              onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+              onMouseLeave={(e) => (e.target.style.color = 'white')}>LinkedIn</a>
+            </p>
+            <p>
+              Check out my GitHub: <a href="https://github.com/Shay-W152" target="_blank"  
+              onMouseEnter={(e) => (e.target.style.color = 'aqua')}
+              onMouseLeave={(e) => (e.target.style.color = 'white')}
+              >GitHub</a>
+            </p>
 
           <h3 style={styles.sectionHeading}>Statement</h3>
           <p style={styles.paragraph}>

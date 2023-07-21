@@ -5,6 +5,12 @@ import Transitions2 from './Transitions2';
 const ModifiedProjects = () => {
   const projects = [
     {
+      title: 'Tickit',
+      imageUrl: 'https://i.imgur.com/VN6oMfA.png',
+      link: 'http://tick-it.s3-website-us-west-1.amazonaws.com/',
+      description: 'A ticket booking and e-commerce site built up with React bootstrap and DjangoRest.',
+    },
+    {
       title: 'Forgotten Horrors',
       imageUrl: 'https://i.imgur.com/zMWWb5Km.png',
       link: 'http://space-dude.surge.sh/',
