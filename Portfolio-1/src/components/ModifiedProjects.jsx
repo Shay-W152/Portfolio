@@ -28,12 +28,12 @@ const ModifiedProjects = () => {
       link: 'https://nebula-nav.netlify.app/',
       description: '.nebulaNav is an interactive starmap site built with three.js fiber allowing users to explore the wonders of the universe.',
     },
-    // {
-    //   title: 'Forgotten Horrors',
-    //   imageUrl: 'https://wallpapers.com/images/hd/cool-white-man-art-l9kfu90ij5saegi6.jpg',
-    //   link: 'http://space-dude.surge.sh/',
-    //   description: 'A space-themed game built with HTML, CSS, and JavaScript.',
-    // },
+    {
+      title: 'LensAcademia',
+      imageUrl: 'https://i.imgur.com/HEeZ8JC.png',
+      link: 'http://space-dude.surge.sh/',
+      description: 'LensAcademia is an app that lets users delve into research papers. With easy browsing, search, and detailed insights, researchers can find the information they need. Powered by React.js, Bootstrap, and Pyton APIs',
+    },
     // {
     //   title: 'Tatdood',
     //   imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVy_a-7_ihJxAqgEX-TX2kSrNdRu5z_dfhig&usqp=CAU',
@@ -100,8 +100,8 @@ const ModifiedProjects = () => {
     padding: '10px',
     borderRadius: '8px',
     color: 'aqua',
-    textAlign: 'center',
-    height: '250px',
+    textAlign: 'left',
+    height: '280px',
     width: '280px',
   };
 
