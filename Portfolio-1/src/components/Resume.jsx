@@ -152,18 +152,19 @@ const Resume = () => {
 
           <h3 style={styles.sectionHeading}>Skills/Languages</h3>
           <ul style={styles.list}>
-            <li>Computer Languages: [List of computer languages]</li>
-            <li>Time Management</li>
+          <li> MongoDB </li>
+            <li> HTML </li>
+            <li> CSS </li>
+            <li> React using the Vite engine </li>
+            <li> Python usng the REST API and VIEWS</li>           
+            <li> SQL and NoSQL Databases </li>
+            <li>Figma</li>
             <li>Data Entry</li>
             <li>Microsoft Office Suite</li>
-            <li>Communication Skills</li>
-            <li>Research Experience</li>
-            <li>Writing Skills</li>
-            <li>Customer Service</li>
-            <li>Organizational Skills</li>
+            <li>Research Lab Experience</li>
+            <li>Writing Skills</li>            
             <li>Account Management</li>
-            <li>Interviewing</li>
-            <li>Recruiting</li>
+            <li>Interviewing and Recruiting</li>
             <li>English</li>
             <li>Urdu</li>
           </ul>
