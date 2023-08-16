@@ -150,13 +150,13 @@ const Resume = () => {
             <li>Assisted in the development and implementation of research projects, conducting data analysis and preparing reports to contribute to the advancement of psychological research within the department.</li>
           </ul>
 
-          <h3 style={styles.sectionHeading}>Skills/Languages</h3>
+          <h3 style={styles.sectionHeading}>Skills and Languages</h3>
           <ul style={styles.list}>
-          <li> MongoDB </li>
+            <li> MongoDB </li>
             <li> HTML </li>
             <li> CSS </li>
             <li> React using the Vite engine </li>
-            <li> Python usng the REST API and VIEWS</li>           
+            <li> Python usng REST API and VIEWS</li>           
             <li> SQL and NoSQL Databases </li>
             <li>Figma</li>
             <li>Data Entry</li>
